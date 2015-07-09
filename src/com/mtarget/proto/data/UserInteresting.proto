@@ -1,0 +1,36 @@
+option java_package = "com.sina.proto.data";
+option java_outer_classname = "UserInfoProto";
+option optimize_for = SPEED;
+
+
+message UserInfo{
+	message Tag{
+		required int32 id=1;
+		required float weight=2;
+	}
+	message Age{
+		required int32 id=1;
+		required float weight=2;
+	}
+	message Gender{
+		required int32 id=1;
+		required float weight=2;
+	}
+	message Group{
+		required int32 id=1;
+		required float weight=2;
+	}
+	message Att{
+		required string type=1;
+		required string id=2;
+		required float weight=3;
+	}
+	repeated Age ages=1;
+	optional int32 gender=2;
+	repeated Tag tags=3;
+	repeated Gender genders=4;
+	repeated Group groups=5;
+	optional int32 source=6;
+	repeated Att atts=7;
+}
+

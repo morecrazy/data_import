@@ -1,0 +1,36 @@
+<config>
+	<step>
+		<class>
+			com.sina.enterprise.EnterpriseImportDriver
+		</class>
+		<field static="true">
+			<name>INPUT_FILE</name>
+			<value>/user/sinadata/enterprise/enterprise_user/</value>
+		</field>
+		<field static="true">
+			<name>HOST_PATH</name>
+			<value>/user/fengming/host.txt</value>
+		</field>
+		<field static="true">
+			<name>USER_REDIS_NAME</name>
+			<value>REDIS1</value>
+		</field>
+		<field static="true">
+			<name>USER_REGION</name>
+			<value>USER_REGION</value>
+		</field>
+		<field static="true">
+			<name>TRY_TIMES</name>
+			<value>1</value>
+		</field>				
+		<field static="true">
+			<name>JEDIS_USER_EXPIRED</name>
+			<value>604800</value>
+		</field>				
+		<method>
+			<name>run</name>
+		</method>
+		<sleep>10000</sleep>
+	</step>
+	 
+</config>

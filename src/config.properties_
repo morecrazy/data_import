@@ -1,0 +1,6 @@
+USER_REGION=USER_REGION
+REDIS_NAME=REDIS1
+HOST_PATH=/data1/temp/panwei1/test/host.txt
+IMPORT_PATH=/data1/temp/panwei1/test/data/
+THRED_NUM=80
+TAG_NUM=10
